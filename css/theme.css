@@ -1,0 +1,285 @@
+/* ===== DARK THEME (Default) ===== */
+:root {
+  --bg: #0a0a12;
+  --bg2: #0e0e1a;
+  --bg3: #12121e;
+  --card: rgba(255,255,255,0.025);
+  --card-hover: rgba(0,200,150,0.04);
+  --border: rgba(255,255,255,0.07);
+  --border-hover: rgba(0,200,150,0.2);
+  --text: #fff;
+  --text2: rgba(255,255,255,0.55);
+  --text3: rgba(255,255,255,0.3);
+  --nav-bg: rgba(10,10,18,0.85);
+  --nav-border: rgba(255,255,255,0.04);
+  --input-bg: rgba(255,255,255,0.04);
+  --input-border: rgba(255,255,255,0.1);
+  --shadow: rgba(0,0,0,0.5);
+  --glow-green: rgba(0,200,150,0.12);
+  --glow-blue: rgba(0,136,255,0.1);
+  --stats-bg: rgba(0,200,150,0.015);
+  --footer-border: rgba(255,255,255,0.05);
+  --code-bg: rgba(255,255,255,0.06);
+}
+
+/* ===== LIGHT THEME ===== */
+[data-theme="light"] {
+  --bg: #f5f7fa;
+  --bg2: #edf0f5;
+  --bg3: #e4e8ef;
+  --card: rgba(255,255,255,0.85);
+  --card-hover: rgba(0,200,150,0.06);
+  --border: rgba(0,0,0,0.08);
+  --border-hover: rgba(0,200,150,0.3);
+  --text: #1a1a2e;
+  --text2: rgba(26,26,46,0.65);
+  --text3: rgba(26,26,46,0.4);
+  --nav-bg: rgba(245,247,250,0.9);
+  --nav-border: rgba(0,0,0,0.06);
+  --input-bg: rgba(0,0,0,0.03);
+  --input-border: rgba(0,0,0,0.12);
+  --shadow: rgba(0,0,0,0.08);
+  --glow-green: rgba(0,200,150,0.06);
+  --glow-blue: rgba(0,136,255,0.05);
+  --stats-bg: rgba(0,200,150,0.04);
+  --footer-border: rgba(0,0,0,0.06);
+  --code-bg: rgba(0,0,0,0.04);
+}
+
+/* Light theme specific overrides */
+[data-theme="light"] body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+[data-theme="light"] .nav {
+  background: var(--nav-bg);
+  border-bottom-color: var(--nav-border);
+  box-shadow: 0 1px 12px rgba(0,0,0,0.06);
+}
+
+[data-theme="light"] .hero-glow1,
+[data-theme="light"] .hero-glow2,
+[data-theme="light"] .hero-glow,
+[data-theme="light"] .hero-glow-2 {
+  opacity: 0.3;
+}
+
+[data-theme="light"] .hero-grid,
+[data-theme="light"] .grid-pattern,
+[data-theme="light"] .hero-bg .hero-grid {
+  opacity: 0.4;
+}
+
+[data-theme="light"] .hamburger span {
+  background: var(--text);
+}
+
+[data-theme="light"] .mobile-menu {
+  background: rgba(245,247,250,0.97);
+}
+
+[data-theme="light"] .product-card,
+[data-theme="light"] .feat,
+[data-theme="light"] .why-card,
+[data-theme="light"] .gauge-card,
+[data-theme="light"] .feature-card,
+[data-theme="light"] .step-card,
+[data-theme="light"] .benefit-card {
+  background: var(--card);
+  border-color: var(--border);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+}
+
+[data-theme="light"] .product-card:hover,
+[data-theme="light"] .feat:hover,
+[data-theme="light"] .why-card:hover,
+[data-theme="light"] .feature-card:hover {
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+
+[data-theme="light"] .dashboard-preview,
+[data-theme="light"] .production-line-wrapper,
+[data-theme="light"] .illustration-wrapper {
+  background: var(--card);
+  border-color: var(--border);
+}
+
+[data-theme="light"] .stats-strip,
+[data-theme="light"] .stats-bar {
+  background: var(--stats-bg);
+  border-color: var(--border);
+}
+
+[data-theme="light"] .stat-item,
+[data-theme="light"] .stat {
+  border-color: var(--border);
+}
+
+[data-theme="light"] .footer {
+  background: var(--bg2);
+  border-color: var(--border);
+}
+
+[data-theme="light"] .footer-bottom {
+  border-color: var(--border);
+}
+
+[data-theme="light"] .footer-social {
+  background: var(--card);
+  border-color: var(--border);
+}
+
+[data-theme="light"] .footer-social svg {
+  fill: var(--text3);
+}
+
+[data-theme="light"] .btn-outline {
+  border-color: rgba(0,0,0,0.15);
+  color: var(--text2);
+}
+
+[data-theme="light"] .btn-outline:hover {
+  border-color: rgba(0,0,0,0.3);
+  color: var(--text);
+}
+
+[data-theme="light"] .hero h1,
+[data-theme="light"] .headline,
+[data-theme="light"] .section-title,
+[data-theme="light"] .cta-title,
+[data-theme="light"] .pc-title,
+[data-theme="light"] .why-title,
+[data-theme="light"] .feat h3,
+[data-theme="light"] .cta-headline {
+  color: var(--text);
+}
+
+[data-theme="light"] .nav-brand {
+  color: var(--text);
+}
+
+[data-theme="light"] .badge,
+[data-theme="light"] .hero-badge {
+  background: rgba(0,200,150,0.08);
+  border-color: rgba(0,200,150,0.2);
+}
+
+/* Contact form light overrides */
+[data-theme="light"] .form-input,
+[data-theme="light"] .form-textarea,
+[data-theme="light"] .form-select,
+[data-theme="light"] input,
+[data-theme="light"] textarea,
+[data-theme="light"] select {
+  background: var(--input-bg) !important;
+  border-color: var(--input-border) !important;
+  color: var(--text) !important;
+}
+
+[data-theme="light"] .contact-card,
+[data-theme="light"] .info-card {
+  background: var(--card);
+  border-color: var(--border);
+}
+
+/* Smooth transitions */
+body,
+.nav,
+.product-card,
+.feat,
+.why-card,
+.gauge-card,
+.feature-card,
+.step-card,
+.benefit-card,
+.dashboard-preview,
+.production-line-wrapper,
+.illustration-wrapper,
+.stats-strip,
+.stats-bar,
+.stat-item,
+.stat,
+.footer,
+.footer-social,
+.btn-outline,
+.mobile-menu,
+.contact-card,
+.info-card,
+input, textarea, select {
+  transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* ===== THEME TOGGLE BUTTON ===== */
+.theme-toggle {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.theme-toggle:hover {
+  border-color: var(--border-hover);
+  background: var(--card-hover);
+  transform: scale(1.05);
+}
+.theme-toggle svg {
+  width: 20px;
+  height: 20px;
+  transition: all 0.4s ease;
+  position: absolute;
+}
+.theme-toggle .icon-moon {
+  stroke: #a78bfa;
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+}
+.theme-toggle .icon-sun {
+  stroke: #f59e0b;
+  opacity: 0;
+  transform: rotate(-90deg) scale(0.5);
+}
+[data-theme="light"] .theme-toggle .icon-moon {
+  opacity: 0;
+  transform: rotate(90deg) scale(0.5);
+}
+[data-theme="light"] .theme-toggle .icon-sun {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+}
+
+/* Mobile theme toggle */
+.mobile-theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: var(--text2);
+  font-size: 15px;
+}
+.mobile-theme-toggle:hover {
+  background: rgba(255,255,255,0.04);
+  color: var(--text);
+}
+[data-theme="light"] .mobile-theme-toggle:hover {
+  background: rgba(0,0,0,0.04);
+}
+.mobile-theme-toggle svg {
+  width: 20px;
+  height: 20px;
+}
+.mobile-theme-toggle .label-dark { display: inline; }
+.mobile-theme-toggle .label-light { display: none; }
+[data-theme="light"] .mobile-theme-toggle .label-dark { display: none; }
+[data-theme="light"] .mobile-theme-toggle .label-light { display: inline; }

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon-180.png">
+<title>Energy Management System (EMS) — PT Ikhlas Amal Mulia Industri</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/theme.css">
+<link rel="stylesheet" href="css/ems.css">
+<script src="theme.js"></script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon"><img src="img/logo.png" alt="ONE I'M Logo"></div>
+      <div class="nav-brand">ONE I'M<span>PT Ikhlas Amal Mulia Industri</span></div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="oee.html">OEE System</a>
+      <a href="weighing.html">Weighing</a>
+      <a href="ems.html" class="active">EMS</a>
+      <a href="training.html">Training</a>
+      <a href="contact.html" class="nav-cta">Hubungi Kami</a>
+    </div>
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+    </button>
+    <div class="hamburger" onclick="toggleMobileMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="oee.html">OEE System</a>
+  <a href="weighing.html">Weighing System</a>
+  <a href="ems.html">EMS</a>
+  <a href="training.html">Training Management</a>
+  <a href="contact.html">Hubungi Kami</a>
+  <div class="mobile-theme-toggle" onclick="toggleTheme()">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    <span class="label-dark">Mode Siang</span>
+    <span class="label-light">Mode Malam</span>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg">
+    <div class="hero-glow1"></div>
+    <div class="hero-glow2"></div>
+    <div class="hero-grid"></div>
+  </div>
+  <svg class="hero-illustration" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+    <!-- Power meters -->
+    <g id="meters">
+      <rect x="40" y="60" width="100" height="120" rx="8" fill="none" stroke="currentColor" stroke-width="2"/>
+      <circle cx="90" cy="110" r="30" fill="none" stroke="currentColor" stroke-width="2"/>
+      <line x1="90" y1="110" x2="90" y2="85" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <text x="90" y="150" text-anchor="middle" font-size="10" fill="currentColor">kW</text>
+    </g>
+
+    <g id="meters2" transform="translate(180, 0)">
+      <rect x="40" y="60" width="100" height="120" rx="8" fill="none" stroke="currentColor" stroke-width="2"/>
+      <circle cx="90" cy="110" r="30" fill="none" stroke="currentColor" stroke-width="2"/>
+      <line x1="90" y1="110" x2="110" y2="100" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <text x="90" y="150" text-anchor="middle" font-size="10" fill="currentColor">GAS</text>
+    </g>
+
+    <!-- Graph -->
+    <g id="graph" transform="translate(30, 220)">
+      <rect x="0" y="0" width="280" height="100" rx="6" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
+      <polyline points="10,80 50,60 90,40 130,50 170,25 210,45 270,15" fill="none" stroke="currentColor" stroke-width="2"/>
+      <circle cx="10" cy="80" r="3" fill="currentColor"/>
+      <circle cx="270" cy="15" r="3" fill="currentColor"/>
+    </g>
+
+    <!-- Lightning bolt -->
+    <g id="lightning" transform="translate(260, 80)">
+      <path d="M 20 10 L 10 30 L 15 35 L 5 55 M 20 10 L 30 25 L 25 35 L 35 50" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </svg>
+  <div class="hero-inner">
+    <div class="hero-badge">Efisiensi Energi Terdepan</div>
+    <h1>Energy Management System <em>Real-Time</em></h1>
+    <p class="hero-sub">Monitor dan optimalkan konsumsi energi pabrik secara real-time dengan platform EMS kami. Kurangi biaya operasional dan jejak karbon dengan analitik mendalam dan deteksi anomali otomatis.</p>
+    <div class="hero-actions">
+      <a href="#features" class="btn btn-primary">
+        Pelajari Lebih Lanjut
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <a href="contact.html" class="btn btn-outline">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72"/><line x1="14" y1="2" x2="14" y2="8"/><line x1="11" y1="5" x2="17" y2="5"/></svg>
+        Konsultasi Gratis
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-strip">
+  <div class="stats-inner">
+    <div class="stat-item">
+      <div class="stat-num">45%</div>
+      <div class="stat-label">Pengurangan Biaya Energi Rata-rata</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">24/7</div>
+      <div class="stat-label">Monitoring & Analitik Terus-Menerus</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">2000+</div>
+      <div class="stat-label">Meter Terhubung di Berbagai Fasilitas</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">500+</div>
+      <div class="stat-label">Perusahaan Mempercayai Solusi Kami</div>
+    </div>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<section class="section" id="features">
+  <div class="section-inner">
+    <div class="section-tag">Fitur Utama</div>
+    <h2 class="section-title">Kemampuan EMS Lengkap</h2>
+    <p class="section-desc">Paket fitur komprehensif untuk pengelolaan energi yang efisien dan terukur di fasilitas produksi Anda.</p>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/></svg>
+        </div>
+        <h3 class="feature-title">Monitoring Energi Real-Time</h3>
+        <p class="feature-desc">Pantau konsumsi listrik, gas, dan air secara real-time dengan dashboard yang intuitif dan responsif.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M9 17H7v-7h2V17zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/><path d="M5.1 21h13.8c.5 0 .9-.5.9-1V2c0-.5-.4-1-.9-1H5.1c-.5 0-.9.5-.9 1v18c0 .5.4 1 .9 1z"/></svg>
+        </div>
+        <h3 class="feature-title">Analitik Biaya & Forecasting</h3>
+        <p class="feature-desc">Analisis detail biaya energi per meter, departemen, atau peralatan dengan prediksi anggaran bulanan.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+        </div>
+        <h3 class="feature-title">Tracking Jejak Karbon</h3>
+        <p class="feature-desc">Hitung dan laporan emisi karbon secara otomatis berdasarkan konsumsi energi aktual fasilitas Anda.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+        </div>
+        <h3 class="feature-title">Multi-Utility Support</h3>
+        <p class="feature-desc">Kelola listrik, gas, air, dan utility lainnya dalam satu platform terpadu dengan konversi energi otomatis.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>
+        </div>
+        <h3 class="feature-title">Deteksi Anomali Otomatis</h3>
+        <p class="feature-desc">Identifikasi pola penggunaan abnormal dan peralatan bermasalah dengan algoritma machine learning canggih.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zm-5.04-6.71l-2.75 3.54-2.16-2.66c-.2-.24-.58-.24-.77 0l-1.19 1.49c-.23.3-.03.84.34.84h5.63c.37 0 .57-.54.34-.84l-1.04-1.3z"/></svg>
+        </div>
+        <h3 class="feature-title">Compliance Reporting ISO 50001</h3>
+        <p class="feature-desc">Laporan otomatis sesuai standar ISO 50001 untuk memenuhi persyaratan regulasi dan sertifikasi energi.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section" style="background:rgba(167,139,250,0.02);">
+  <div class="section-inner">
+    <div class="section-tag">Cara Kerja</div>
+    <h2 class="section-title">4 Langkah Implementasi Mudah</h2>
+
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-number">1</div>
+        <h3 class="step-title">Instalasi Meter</h3>
+        <p class="step-desc">Kami membantu instalasi smart meter listrik, gas, dan air di seluruh fasilitas produksi Anda.</p>
+      </div>
+
+      <div class="step-card">
+        <div class="step-number">2</div>
+        <h3 class="step-title">Koneksi Platform</h3>
+        <p class="step-desc">Hubungkan semua meter ke cloud platform EMS kami dengan setup keamanan tingkat enterprise.</p>
+      </div>
+
+      <div class="step-card">
+        <div class="step-number">3</div>
+        <h3 class="step-title">Analisis Konsumsi</h3>
+        <p class="step-desc">Dapatkan insights mendalam tentang pola konsumsi energi dan identifikasi area untuk optimasi.</p>
+      </div>
+
+      <div class="step-card">
+        <div class="step-number">4</div>
+        <h3 class="step-title">Optimasi & Hemat</h3>
+        <p class="step-desc">Implementasikan rekomendasi kami untuk mengurangi konsumsi hingga 45% dan biaya operasional.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="section">
+  <div class="section-inner">
+    <div class="section-tag">Manfaat Bisnis</div>
+    <h2 class="section-title">Hasil Nyata untuk Pabrik Anda</h2>
+
+    <div class="benefits-grid">
+      <div class="benefits-content">
+        <h3>Penghematan & Efisiensi</h3>
+
+        <div class="benefit-item">
+          <div class="benefit-check">
+            <svg viewBox="0 0 24 24" fill="none"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div class="benefit-text">
+            <h4>Pengurangan Biaya Operasional</h4>
+            <p>Hemat hingga 40-45% biaya energi melalui optimasi konsumsi yang terukur dan konsisten.</p>
+          </div>
+        </div>
+
+        <div class="benefit-item">
+          <div class="benefit-check">
+            <svg viewBox="0 0 24 24" fill="none"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div class="benefit-text">
+            <h4>Peningkatan Efisiensi Produksi</h4>
+            <p>Optimalkan kinerja peralatan dengan monitoring real-time dan maintenance predictive berbasis data.</p>
+          </div>
+        </div>
+
+        <div class="benefit-item">
+          <div class="benefit-check">
+            <svg viewBox="0 0 24 24" fill="none"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div class="benefit-text">
+            <h4>Target Keberlanjutan Tercapai</h4>
+            <p>Penuhi komitmen ESG dengan pengurangan karbon terukur dan laporan transparansi reguler.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="benefits-stats">
+        <div class="benefit-stat">
+          <div class="benefit-stat-num">40%</div>
+          <div class="benefit-stat-label">Hemat Rata-rata Biaya Energi Tahunan</div>
+        </div>
+        <div class="benefit-stat">
+          <div class="benefit-stat-num">95%</div>
+          <div class="benefit-stat-label">Akurasi Data Meter & Real-Time</div>
+        </div>
+        <div class="benefit-stat">
+          <div class="benefit-stat-num">6-12</div>
+          <div class="benefit-stat-label">Bulan ROI Khas untuk Implementasi</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-inner">
+    <h2 class="cta-title">Optimalkan Energi Pabrik Anda Hari Ini</h2>
+    <p class="cta-desc">Hubungi tim kami untuk konsultasi gratis dan demo platform EMS yang disesuaikan dengan kebutuhan spesifik fasilitas Anda.</p>
+    <a href="contact.html" class="btn btn-primary">
+      Minta Konsultasi Gratis
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">ONE I'M</div>
+      <p class="footer-brand-desc">PT Ikhlas Amal Mulia Industri menyediakan solusi teknologi digital terdepan untuk industri manufaktur dan proses produksi modern.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Produk</div>
+      <a href="index.html">Home</a>
+      <a href="oee.html">OEE System</a>
+      <a href="weighing.html">Weighing System</a>
+      <a href="ems.html">EMS</a>
+    </div>
+    <div>
+      <div class="footer-col-title">Perusahaan</div>
+      <a href="contact.html">Hubungi Kami</a>
+      <a href="training.html">Training</a>
+      <a href="#">Tentang Kami</a>
+      <a href="#">Blog</a>
+    </div>
+    <div>
+      <div class="footer-col-title">Bantuan</div>
+      <a href="#">Dokumentasi</a>
+      <a href="#">Support</a>
+      <a href="#">FAQ</a>
+      <a href="#">Kebijakan Privasi</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2024 PT Ikhlas Amal Mulia Industri. Semua hak dilindungi.</p>
+    <div class="footer-socials">
+      <a href="#" class="footer-social" title="LinkedIn">
+        <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.39v-1.2h-2.16v8.5h2.16v-4.43c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.43h2.16M6.88 8.56a1.68 1.68 0 1 1 0-3.36 1.68 1.68 0 0 1 0 3.36m1.39 9.94h-2.78v-8.5h2.78v8.5z"/></svg>
+      </a>
+      <a href="#" class="footer-social" title="Twitter">
+        <svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2s9 5 20 5a9.5 9.5 0 00-9-5.5c4.75 2.25 7-7 7-7a10.6 10.6 0 01-10-10.5z"/></svg>
+      </a>
+      <a href="#" class="footer-social" title="Email">
+        <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 8 10-8"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

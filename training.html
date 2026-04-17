@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon-180.png">
+<title>Training Management System — PT Ikhlas Amal Mulia Industri</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/theme.css">
+<link rel="stylesheet" href="css/training.css">
+<script src="theme.js"></script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon"><img src="img/logo.png" alt="ONE I'M Logo"></div>
+      <div class="nav-brand">ONE I'M<span>PT Ikhlas Amal Mulia Industri</span></div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="oee.html">OEE System</a>
+      <a href="weighing.html">Weighing</a>
+      <a href="ems.html">EMS</a>
+      <a href="training.html" class="active">Training</a>
+      <a href="contact.html" class="nav-cta">Hubungi Kami</a>
+    </div>
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+    </button>
+    <div class="hamburger" onclick="toggleMobileMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="oee.html">OEE System</a>
+  <a href="weighing.html">Weighing System</a>
+  <a href="ems.html">EMS</a>
+  <a href="training.html">Training Management</a>
+  <a href="contact.html">Hubungi Kami</a>
+  <div class="mobile-theme-toggle" onclick="toggleTheme()">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    <span class="label-dark">Mode Siang</span>
+    <span class="label-light">Mode Malam</span>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg">
+    <div class="hero-glow1"></div>
+    <div class="hero-glow2"></div>
+    <div class="hero-grid"></div>
+  </div>
+  <div class="hero-inner">
+    <div class="hero-badge">Platform Pelatihan Digital</div>
+    <h1>Training Management <em>System</em></h1>
+    <p class="hero-sub">Platform digital lengkap untuk mengelola pelatihan dan pengembangan kompetensi karyawan. Kelola jadwal, lacak progres, dan cetak sertifikat otomatis.</p>
+    <div class="hero-actions">
+      <a href="#features" class="btn btn-primary">
+        Lihat Fitur
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <a href="contact.html" class="btn btn-outline">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72"/><line x1="14" y1="2" x2="14" y2="8"/><line x1="11" y1="5" x2="17" y2="5"/></svg>
+        Konsultasi Gratis
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features-section" id="features">
+  <div class="features-inner">
+    <div class="section-tag">Fitur Unggulan</div>
+    <div class="section-title">Kelola Pelatihan dengan Efisien</div>
+    <p class="section-desc">Enam fitur utama untuk mengelola seluruh siklus pelatihan karyawan dari perencanaan hingga sertifikasi.</p>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L15.09 8.26H22L17.55 12.5L19.64 18.74L12 14.49L4.36 18.74L6.45 12.5L2 8.26H8.91L12 2Z"/></svg>
+        </div>
+        <div class="feature-title">Training Matrix & Scheduler</div>
+        <p class="feature-desc">Buat dan kelola matriks kompetensi karyawan. Jadwalkan pelatihan otomatis berdasarkan kebutuhan dan level skill.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div class="feature-title">Competency Tracking</div>
+        <p class="feature-desc">Pantau perkembangan kompetensi setiap karyawan secara real-time. Identifikasi skill gap dan kebutuhan pelatihan.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><circle cx="10" cy="16" r="2"/><path d="M10 12v8M8 14h4"/></svg>
+        </div>
+        <div class="feature-title">Auto Certificate Generation</div>
+        <p class="feature-desc">Sertifikat otomatis dihasilkan setelah pelatihan selesai. Lampirkan tanda tangan digital dan berbagi secara otomatis.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 3v4M8 3v4"/></svg>
+        </div>
+        <div class="feature-title">Online & Offline Training</div>
+        <p class="feature-desc">Dukung pelatihan virtual melalui video & materi online, atau training tatap muka dengan tracking manual.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 12 9 19 21 5"/></svg>
+        </div>
+        <div class="feature-title">Evaluation & Assessment</div>
+        <p class="feature-desc">Buat kuis dan ujian online untuk mengevaluasi pemahaman peserta. Skor otomatis dan laporan komprehensif.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div class="feature-title">Compliance & Audit Trail</div>
+        <p class="feature-desc">Kelola kepatuhan regulasi & standar industri. Audit log lengkap untuk semua aktivitas pelatihan dan sertifikasi.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how-section" style="background:var(--bg2);">
+  <div class="how-inner">
+    <div class="section-tag">Cara Kerja</div>
+    <div class="section-title">Empat Langkah Mudah</div>
+
+    <div class="how-steps">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <div class="step-title">Definisikan Kompetensi</div>
+        <p class="step-desc">Tentukan keahlian & skill yang diperlukan untuk setiap posisi di organisasi Anda.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <div class="step-title">Jadwalkan Pelatihan</div>
+        <p class="step-desc">Buat rencana pelatihan berdasarkan gap kompetensi. Sistem akan memberikan rekomendasi otomatis.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <div class="step-title">Eksekusi & Evaluasi</div>
+        <p class="step-desc">Jalankan pelatihan dan track kehadiran peserta. Evaluasi pemahaman dengan tes atau quiz.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">4</div>
+        <div class="step-title">Lacak & Sertifikasi</div>
+        <p class="step-desc">Monitor progress, cetak sertifikat, dan update matriks kompetensi secara otomatis.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ILLUSTRATION -->
+<section class="illustration-section">
+  <div class="illustration-inner">
+    <div class="illustration-box">
+      <div class="illustration-svg">
+        <svg viewBox="0 0 200 200" width="140" height="140">
+          <circle cx="50" cy="50" r="15" fill="#f59e0b" opacity="0.8"/>
+          <circle cx="150" cy="60" r="18" fill="#f59e0b" opacity="0.6"/>
+          <circle cx="100" cy="140" r="12" fill="#f59e0b" opacity="0.7"/>
+          <path d="M 50 65 Q 75 85 100 140" stroke="#f59e0b" stroke-width="2" fill="none" opacity="0.5"/>
+          <path d="M 150 78 Q 125 85 100 140" stroke="#f59e0b" stroke-width="2" fill="none" opacity="0.5"/>
+          <rect x="35" y="170" width="30" height="20" fill="#f59e0b" opacity="0.4" rx="2"/>
+          <rect x="135" y="170" width="30" height="20" fill="#f59e0b" opacity="0.4" rx="2"/>
+          <path d="M 55 175 L 65 175 M 60 170 L 60 180" stroke="#f59e0b" stroke-width="1.5" opacity="0.6"/>
+          <path d="M 155 175 L 165 175 M 160 170 L 160 180" stroke="#f59e0b" stroke-width="1.5" opacity="0.6"/>
+        </svg>
+      </div>
+    </div>
+    <div class="illustration-content">
+      <h3>Satu Platform untuk Semua</h3>
+      <p>Training Management System mengintegrasikan setiap aspek pengembangan karyawan dalam satu dashboard intuitif.</p>
+      <div class="illustration-list">
+        <div class="illustration-list-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          Kelola hingga ribuan karyawan
+        </div>
+        <div class="illustration-list-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          Laporan analytics mendalam
+        </div>
+        <div class="illustration-list-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          Integrasi dengan HRIS & ERP
+        </div>
+        <div class="illustration-list-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          Mobile app untuk peserta training
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="benefits-section">
+  <div class="benefits-inner">
+    <div class="section-tag">Manfaat Bisnis</div>
+    <div class="section-title">Dampak Nyata untuk Organisasi Anda</div>
+
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="benefit-stat">35%</div>
+        <div class="benefit-title">Peningkatan Produktivitas</div>
+        <div class="benefit-desc">Karyawan terlatih dengan baik menghasilkan 35% lebih produktif dalam menjalankan tugas mereka.</div>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-stat">45%</div>
+        <div class="benefit-title">Pengurangan Error</div>
+        <div class="benefit-desc">Kompetensi yang terukur mengurangi kesalahan operasional hingga 45% dalam 6 bulan pertama.</div>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-stat">20%</div>
+        <div class="benefit-title">Hemat Waktu Admin</div>
+        <div class="benefit-desc">Otomasi pelaporan dan sertifikasi menghemat waktu administratif hingga 20 jam per bulan.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-inner">
+    <div class="cta-title">Tingkatkan Kompetensi Tim Anda</div>
+    <p class="cta-desc">Konsultasikan kebutuhan training dengan expert kami. Dapatkan demo gratis hari ini.</p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+      <a href="contact.html" class="btn btn-primary">Hubungi Kami <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      <a href="index.html#products" class="btn btn-outline">Lihat Produk Lainnya</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">PT Ikhlas Amal Mulia Industri</div>
+      <p class="footer-brand-desc">Mitra terpercaya untuk solusi teknologi industri di Indonesia. Menghadirkan inovasi digital untuk manufaktur yang lebih efisien.</p>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Produk</div>
+      <a href="oee.html">OEE System</a>
+      <a href="weighing.html">Weighing System</a>
+      <a href="ems.html">EMS</a>
+      <a href="training.html">Training Management</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Perusahaan</div>
+      <a href="#">Tentang Kami</a>
+      <a href="#">Karir</a>
+      <a href="#">Blog</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Kontak</div>
+      <a href="contact.html">Hubungi Kami</a>
+      <a href="#">Iamirental2020@gmail.com</a>
+      <a href="#">+62 852-7224-9830</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">&copy; 2026 PT Ikhlas Amal Mulia Industri. All rights reserved.</div>
+    <div class="footer-socials">
+      <a href="#" class="footer-social"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+      <a href="#" class="footer-social"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+      <a href="#" class="footer-social"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

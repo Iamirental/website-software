@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon-180.png">
+<title>OEE Monitoring System — PT Ikhlas Amal Mulia Industri</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/oee.css">
+<link rel="stylesheet" href="css/theme.css">
+<script src="theme.js"></script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon"><img src="img/logo.png" alt="ONE I'M Logo"></div>
+      <div class="nav-brand">ONE I'M<span>PT Ikhlas Amal Mulia Industri</span></div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="oee.html" class="active">OEE System</a>
+      <a href="weighing.html">Weighing</a>
+      <a href="ems.html">EMS</a>
+      <a href="training.html">Training</a>
+      <a href="contact.html" class="nav-cta">Hubungi Kami</a>
+    </div>
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+    </button>
+    <div class="hamburger" onclick="toggleMobileMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="oee.html" class="active">OEE System</a>
+  <a href="weighing.html">Weighing System</a>
+  <a href="ems.html">EMS</a>
+  <a href="training.html">Training Management</a>
+  <a href="contact.html">Hubungi Kami</a>
+  <div class="mobile-theme-toggle" onclick="toggleTheme()">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    <span class="label-dark">Mode Siang</span>
+    <span class="label-light">Mode Malam</span>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg">
+    <div class="hero-glow1"></div>
+    <div class="hero-glow2"></div>
+    <div class="hero-grid"></div>
+  </div>
+  <div class="hero-inner">
+    <div class="hero-badge">Solusi Real-Time Terdepan</div>
+    <h1>OEE Monitoring System — <em>Pantau Efektivitas Mesin Anda</em></h1>
+    <p class="hero-sub">Platform real-time untuk memaksimalkan Overall Equipment Effectiveness. Tingkatkan produktivitas, kurangi downtime, dan optimalkan setiap aspek operasi produksi Anda dengan AI-powered analytics.</p>
+    <div class="hero-actions">
+      <a href="#features" class="btn btn-primary">
+        Lihat Fitur
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <a href="contact.html" class="btn btn-outline">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72"/><line x1="14" y1="2" x2="14" y2="8"/><line x1="11" y1="5" x2="17" y2="5"/></svg>
+        Konsultasi Gratis
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-strip">
+  <div class="stats-inner">
+    <div class="stat-item"><div class="stat-num">30%</div><div class="stat-label">Peningkatan OEE Rata-Rata</div></div>
+    <div class="stat-item"><div class="stat-num">50%</div><div class="stat-label">Pengurangan Downtime</div></div>
+    <div class="stat-item"><div class="stat-num">100+</div><div class="stat-label">Pabrik Terhubung</div></div>
+    <div class="stat-item"><div class="stat-num">99.9%</div><div class="stat-label">Uptime Platform</div></div>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<section class="section" id="features">
+  <div class="section-inner">
+    <div class="section-tag">Fitur Unggulan</div>
+    <div class="section-title">Kemampuan Lengkap Monitoring</div>
+    <p class="section-desc">Enam fitur utama yang dirancang untuk memberikan kontrol penuh atas operasional lantai produksi Anda.</p>
+
+    <div class="features-grid">
+      <!-- Real-Time Dashboard -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 12h18M3 6h18"/></svg>
+        </div>
+        <div class="feature-title">Real-Time Dashboard</div>
+        <p class="feature-desc">Visualisasi data OEE, Availability, Performance, dan Quality dalam dashboard interaktif yang dapat diakses kapan saja.</p>
+      </div>
+
+      <!-- Six Big Losses -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <div class="feature-title">Six Big Losses Analysis</div>
+        <p class="feature-desc">Identifikasi dan analisis keenam kategori kehilangan produksi untuk menemukan peluang peningkatan efisiensi.</p>
+      </div>
+
+      <!-- Downtime Tracking -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div class="feature-title">Downtime Tracking</div>
+        <p class="feature-desc">Catat setiap downtime, identifikasi penyebab, dan monitor durasi untuk mengurangi kehilangan waktu produksi.</p>
+      </div>
+
+      <!-- Shift Reports -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        </div>
+        <div class="feature-title">Shift Reports</div>
+        <p class="feature-desc">Laporan otomatis per shift dengan ringkasan OEE, kejadian penting, dan rekomendasi tindakan perbaikan.</p>
+      </div>
+
+      <!-- AI-Powered Analytics -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="9"/></svg>
+        </div>
+        <div class="feature-title">AI-Powered Analytics</div>
+        <p class="feature-desc">Sistem kecerdasan buatan yang memprediksi potensi masalah dan memberikan rekomendasi optimisasi berbasis data historis.</p>
+      </div>
+
+      <!-- Multi-line Support -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <div class="feature-title">Multi-line Support</div>
+        <p class="feature-desc">Monitor multiple production lines sekaligus dengan kemampuan skalabilitas tanpa batas untuk pabrik besar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section" style="background:var(--bg2);">
+  <div class="section-inner">
+    <div class="section-tag">Bagaimana Cara Kerjanya</div>
+    <div class="section-title">Implementasi dalam 4 Langkah Mudah</div>
+    <p class="section-desc">Dari instalasi hingga produksi, kami memandu setiap tahap perjalanan transformasi digital Anda.</p>
+
+    <div class="how-grid">
+      <div class="how-step">
+        <div class="how-step-num">1</div>
+        <div class="how-step-title">Install Sensor</div>
+        <div class="how-step-desc">Pasang sensor IoT pada mesin produksi dengan bantuan tim teknisi kami.</div>
+      </div>
+      <div class="how-step">
+        <div class="how-step-num">2</div>
+        <div class="how-step-title">Connect to Cloud</div>
+        <div class="how-step-desc">Sensor terhubung ke cloud platform kami dengan koneksi aman dan terenkripsi.</div>
+      </div>
+      <div class="how-step">
+        <div class="how-step-num">3</div>
+        <div class="how-step-title">Monitor Dashboard</div>
+        <div class="how-step-desc">Akses dashboard real-time dari web atau aplikasi mobile untuk monitoring 24/7.</div>
+      </div>
+      <div class="how-step">
+        <div class="how-step-num">4</div>
+        <div class="how-step-title">Optimize Production</div>
+        <div class="how-step-desc">Gunakan insights untuk optimisasi berkelanjutan dan tingkatkan efisiensi produksi.</div>
+      </div>
+    </div>
+
+    <!-- Production Line Illustration -->
+    <div class="production-line-wrapper">
+      <svg viewBox="0 0 552 180" fill="none" xmlns="http://www.w3.org/2000/svg" class="production-line-svg">
+        <!-- Factory floor / ground line -->
+        <rect x="0" y="155" width="552" height="2" rx="1" fill="rgba(0,200,150,0.15)"/>
+
+        <!-- Conveyor Belt -->
+        <rect x="30" y="130" width="492" height="12" rx="6" fill="rgba(255,255,255,0.04)" stroke="rgba(0,200,150,0.2)" stroke-width="1"/>
+        <!-- Conveyor rollers -->
+        <circle cx="60" cy="136" r="4" fill="rgba(0,200,150,0.15)" stroke="rgba(0,200,150,0.3)" stroke-width="1"/>
+        <circle cx="110" cy="136" r="4" fill="rgba(0,200,150,0.15)" stroke="rgba(0,200,150,0.3)" stroke-width="1"/>
+        <circle cx="160" cy="136" r="4" fill="rgba(0,200,150,0.15)" stroke="rgba(0,200,150,0.3)" stroke-width="1"/>
+        <circle cx="210" cy="136" r="4" fill="rgba(0,200,150,0.15)" stroke="rgba(0,200,150,0.3)" stroke-width="1"/>
+        <circle cx="260" cy="136" r="4" fill="rgba(0,200,150,0.15)" stroke="rgba(0,200,150,0.3)" stroke-width="1"/>
+        <circle cx="310" cy="136" r="4" fill="rgba(0,200,150,0.15)" stroke="rgba(0,200,150,0.3)" stroke-width="1"/>
+        <circle cx="360" cy="136" r="4" fill="rgba(0,200,150,0.15)" stroke="rgba(0,200,150,0.3)" stroke-width="1"/>
+        <circle cx="410" cy="136" r="4" fill="rgba(0,200,150,0.15)" stroke="rgba(0,200,150,0.3)" stroke-width="1"/>
+        <circle cx="460" cy="136" r="4" fill="rgba(0,200,150,0.15)" stroke="rgba(0,200,150,0.3)" stroke-width="1"/>
+        <circle cx="500" cy="136" r="4" fill="rgba(0,200,150,0.15)" stroke="rgba(0,200,150,0.3)" stroke-width="1"/>
+
+        <!-- Products on conveyor (boxes) -->
+        <rect x="90" y="114" width="18" height="16" rx="2" fill="rgba(0,200,150,0.12)" stroke="rgba(0,200,150,0.35)" stroke-width="1">
+          <animateTransform attributeName="transform" type="translate" values="0,0;20,0;0,0" dur="4s" repeatCount="indefinite"/>
+        </rect>
+        <rect x="200" y="112" width="20" height="18" rx="2" fill="rgba(0,136,255,0.12)" stroke="rgba(0,136,255,0.35)" stroke-width="1">
+          <animateTransform attributeName="transform" type="translate" values="0,0;20,0;0,0" dur="4s" begin="0.5s" repeatCount="indefinite"/>
+        </rect>
+        <rect x="330" y="113" width="19" height="17" rx="2" fill="rgba(167,139,250,0.12)" stroke="rgba(167,139,250,0.35)" stroke-width="1">
+          <animateTransform attributeName="transform" type="translate" values="0,0;20,0;0,0" dur="4s" begin="1s" repeatCount="indefinite"/>
+        </rect>
+        <rect x="450" y="114" width="18" height="16" rx="2" fill="rgba(0,200,150,0.12)" stroke="rgba(0,200,150,0.35)" stroke-width="1">
+          <animateTransform attributeName="transform" type="translate" values="0,0;20,0;0,0" dur="4s" begin="1.5s" repeatCount="indefinite"/>
+        </rect>
+
+        <!-- Machine 1 - CNC / Stamping -->
+        <g>
+          <rect x="50" y="55" width="80" height="70" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(0,200,150,0.2)" stroke-width="1.5"/>
+          <rect x="58" y="63" width="64" height="32" rx="4" fill="rgba(0,200,150,0.06)" stroke="rgba(0,200,150,0.15)" stroke-width="1"/>
+          <!-- Screen content - bar chart -->
+          <rect x="64" y="78" width="8" height="12" rx="1" fill="rgba(0,200,150,0.4)"/>
+          <rect x="76" y="72" width="8" height="18" rx="1" fill="rgba(0,136,255,0.4)"/>
+          <rect x="88" y="75" width="8" height="15" rx="1" fill="rgba(0,200,150,0.3)"/>
+          <rect x="100" y="70" width="8" height="20" rx="1" fill="rgba(0,200,150,0.5)"/>
+          <!-- Status indicator -->
+          <circle cx="68" cy="110" r="4" fill="#00c896">
+            <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
+          </circle>
+          <text x="78" y="113" fill="rgba(255,255,255,0.35)" font-size="8" font-family="JetBrains Mono, monospace">RUN</text>
+          <!-- Label -->
+          <text x="90" y="48" fill="rgba(255,255,255,0.3)" font-size="9" font-family="Inter, sans-serif" text-anchor="middle">Mesin CNC</text>
+        </g>
+
+        <!-- Machine 2 - Assembly Robot -->
+        <g>
+          <rect x="170" y="40" width="85" height="85" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(0,136,255,0.2)" stroke-width="1.5"/>
+          <!-- Robot arm illustration -->
+          <line x1="195" y1="95" x2="195" y2="70" stroke="rgba(0,136,255,0.5)" stroke-width="3" stroke-linecap="round">
+            <animateTransform attributeName="transform" type="rotate" values="0 195 95;8 195 95;0 195 95;-8 195 95;0 195 95" dur="3s" repeatCount="indefinite"/>
+          </line>
+          <line x1="195" y1="70" x2="220" y2="55" stroke="rgba(0,136,255,0.5)" stroke-width="3" stroke-linecap="round">
+            <animateTransform attributeName="transform" type="rotate" values="0 195 70;-5 195 70;0 195 70;5 195 70;0 195 70" dur="3s" repeatCount="indefinite"/>
+          </line>
+          <circle cx="220" cy="55" r="4" fill="rgba(0,136,255,0.3)" stroke="rgba(0,136,255,0.5)" stroke-width="1.5">
+            <animateTransform attributeName="transform" type="rotate" values="0 195 70;-5 195 70;0 195 70;5 195 70;0 195 70" dur="3s" repeatCount="indefinite"/>
+          </circle>
+          <!-- Base -->
+          <rect x="185" y="96" width="20" height="6" rx="2" fill="rgba(0,136,255,0.2)"/>
+          <!-- Status -->
+          <circle cx="237" cy="110" r="4" fill="#0088ff">
+            <animate attributeName="opacity" values="1;0.4;1" dur="1.5s" repeatCount="indefinite"/>
+          </circle>
+          <text x="178" y="33" fill="rgba(255,255,255,0.3)" font-size="9" font-family="Inter, sans-serif">Robot Assembly</text>
+        </g>
+
+        <!-- Machine 3 - Quality Inspection -->
+        <g>
+          <rect x="295" y="50" width="80" height="75" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(167,139,250,0.2)" stroke-width="1.5"/>
+          <!-- Camera / Scanner -->
+          <rect x="315" y="60" width="40" height="28" rx="4" fill="rgba(167,139,250,0.08)" stroke="rgba(167,139,250,0.25)" stroke-width="1"/>
+          <circle cx="335" cy="74" r="8" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.35)" stroke-width="1.5"/>
+          <circle cx="335" cy="74" r="3" fill="rgba(167,139,250,0.4)">
+            <animate attributeName="r" values="3;4;3" dur="2s" repeatCount="indefinite"/>
+          </circle>
+          <!-- Scan beam -->
+          <line x1="335" y1="88" x2="320" y2="115" stroke="rgba(167,139,250,0.2)" stroke-width="1" stroke-dasharray="3 3">
+            <animate attributeName="opacity" values="0.2;0.6;0.2" dur="1.5s" repeatCount="indefinite"/>
+          </line>
+          <line x1="335" y1="88" x2="350" y2="115" stroke="rgba(167,139,250,0.2)" stroke-width="1" stroke-dasharray="3 3">
+            <animate attributeName="opacity" values="0.2;0.6;0.2" dur="1.5s" repeatCount="indefinite"/>
+          </line>
+          <!-- Check mark -->
+          <polyline points="322,105 330,112 348,98" fill="none" stroke="rgba(0,200,150,0.5)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <animate attributeName="opacity" values="0;1;1;0" dur="3s" repeatCount="indefinite"/>
+          </polyline>
+          <text x="335" y="43" fill="rgba(255,255,255,0.3)" font-size="9" font-family="Inter, sans-serif" text-anchor="middle">QC Inspect</text>
+        </g>
+
+        <!-- Machine 4 - Packaging -->
+        <g>
+          <rect x="415" y="55" width="80" height="70" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(245,158,11,0.2)" stroke-width="1.5"/>
+          <!-- Box packaging visual -->
+          <rect x="435" y="68" width="24" height="22" rx="2" fill="rgba(245,158,11,0.08)" stroke="rgba(245,158,11,0.3)" stroke-width="1"/>
+          <line x1="435" y1="79" x2="459" y2="79" stroke="rgba(245,158,11,0.2)" stroke-width="1"/>
+          <line x1="447" y1="68" x2="447" y2="90" stroke="rgba(245,158,11,0.2)" stroke-width="1"/>
+          <!-- Arrow into box -->
+          <path d="M465 72 L475 79 L465 86" fill="none" stroke="rgba(245,158,11,0.3)" stroke-width="1.5" stroke-linecap="round"/>
+          <!-- Counter -->
+          <text x="440" y="108" fill="rgba(245,158,11,0.5)" font-size="11" font-family="JetBrains Mono, monospace" font-weight="600">1,247</text>
+          <text x="474" y="108" fill="rgba(255,255,255,0.2)" font-size="7" font-family="Inter, sans-serif">pcs</text>
+          <text x="455" y="48" fill="rgba(255,255,255,0.3)" font-size="9" font-family="Inter, sans-serif" text-anchor="middle">Packaging</text>
+        </g>
+
+        <!-- IoT Sensor signals (WiFi-like) -->
+        <g opacity="0.5">
+          <!-- Sensor on Machine 1 -->
+          <circle cx="90" cy="50" r="3" fill="rgba(0,200,150,0.6)"/>
+          <path d="M82 42 A12 12 0 0 1 98 42" fill="none" stroke="rgba(0,200,150,0.3)" stroke-width="1">
+            <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite"/>
+          </path>
+          <path d="M78 36 A18 18 0 0 1 102 36" fill="none" stroke="rgba(0,200,150,0.2)" stroke-width="1">
+            <animate attributeName="opacity" values="0;1;0" dur="2s" begin="0.3s" repeatCount="indefinite"/>
+          </path>
+
+          <!-- Sensor on Machine 2 -->
+          <circle cx="212" cy="35" r="3" fill="rgba(0,136,255,0.6)"/>
+          <path d="M204 27 A12 12 0 0 1 220 27" fill="none" stroke="rgba(0,136,255,0.3)" stroke-width="1">
+            <animate attributeName="opacity" values="0;1;0" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+          </path>
+          <path d="M200 21 A18 18 0 0 1 224 21" fill="none" stroke="rgba(0,136,255,0.2)" stroke-width="1">
+            <animate attributeName="opacity" values="0;1;0" dur="2s" begin="0.8s" repeatCount="indefinite"/>
+          </path>
+
+          <!-- Sensor on Machine 3 -->
+          <circle cx="335" cy="38" r="3" fill="rgba(167,139,250,0.6)"/>
+          <path d="M327 30 A12 12 0 0 1 343 30" fill="none" stroke="rgba(167,139,250,0.3)" stroke-width="1">
+            <animate attributeName="opacity" values="0;1;0" dur="2s" begin="1s" repeatCount="indefinite"/>
+          </path>
+
+          <!-- Sensor on Machine 4 -->
+          <circle cx="455" cy="43" r="3" fill="rgba(245,158,11,0.6)"/>
+          <path d="M447 35 A12 12 0 0 1 463 35" fill="none" stroke="rgba(245,158,11,0.3)" stroke-width="1">
+            <animate attributeName="opacity" values="0;1;0" dur="2s" begin="0.7s" repeatCount="indefinite"/>
+          </path>
+        </g>
+
+        <!-- Data flow lines going up to "cloud" -->
+        <g>
+          <line x1="90" y1="40" x2="276" y2="12" stroke="rgba(0,200,150,0.1)" stroke-width="1" stroke-dasharray="4 4">
+            <animate attributeName="stroke-dashoffset" values="0;-8" dur="1s" repeatCount="indefinite"/>
+          </line>
+          <line x1="212" y1="28" x2="276" y2="12" stroke="rgba(0,136,255,0.1)" stroke-width="1" stroke-dasharray="4 4">
+            <animate attributeName="stroke-dashoffset" values="0;-8" dur="1s" repeatCount="indefinite"/>
+          </line>
+          <line x1="335" y1="32" x2="276" y2="12" stroke="rgba(167,139,250,0.1)" stroke-width="1" stroke-dasharray="4 4">
+            <animate attributeName="stroke-dashoffset" values="0;-8" dur="1s" repeatCount="indefinite"/>
+          </line>
+          <line x1="455" y1="36" x2="276" y2="12" stroke="rgba(245,158,11,0.1)" stroke-width="1" stroke-dasharray="4 4">
+            <animate attributeName="stroke-dashoffset" values="0;-8" dur="1s" repeatCount="indefinite"/>
+          </line>
+          <!-- Cloud icon -->
+          <rect x="256" y="2" width="40" height="18" rx="9" fill="rgba(0,200,150,0.08)" stroke="rgba(0,200,150,0.25)" stroke-width="1"/>
+          <text x="276" y="14" fill="rgba(0,200,150,0.5)" font-size="7" font-family="JetBrains Mono, monospace" text-anchor="middle">CLOUD</text>
+        </g>
+
+        <!-- Direction arrows on conveyor -->
+        <g opacity="0.3">
+          <path d="M140 136 L148 136 L145 133 M148 136 L145 139" stroke="rgba(0,200,150,0.5)" stroke-width="1" fill="none"/>
+          <path d="M270 136 L278 136 L275 133 M278 136 L275 139" stroke="rgba(0,200,150,0.5)" stroke-width="1" fill="none"/>
+          <path d="M390 136 L398 136 L395 133 M398 136 L395 139" stroke="rgba(0,200,150,0.5)" stroke-width="1" fill="none"/>
+        </g>
+      </svg>
+      <div class="production-line-label">
+        <div class="pl-dot"></div>
+        Visualisasi aliran data real-time dari lantai produksi ke cloud monitoring
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="section">
+  <div class="section-inner">
+    <div class="section-tag">Manfaat Nyata</div>
+    <div class="section-title">Hasil Terukur dari Implementasi</div>
+    <p class="section-desc">Klien kami melihat peningkatan signifikan dalam metrik operasional mereka dalam waktu singkat.</p>
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:36px 28px;text-align:center;">
+        <div style="font-family:'Space Grotesk',sans-serif;font-size:36px;font-weight:800;color:var(--green);margin-bottom:8px;">+30%</div>
+        <div style="font-size:16px;font-weight:700;margin-bottom:8px;">Peningkatan OEE</div>
+        <p style="font-size:14px;color:var(--text2);font-weight:300;">Rata-rata peningkatan Overall Equipment Effectiveness dalam 6 bulan pertama implementasi.</p>
+      </div>
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:36px 28px;text-align:center;">
+        <div style="font-family:'Space Grotesk',sans-serif;font-size:36px;font-weight:800;color:var(--blue);margin-bottom:8px;">-50%</div>
+        <div style="font-size:16px;font-weight:700;margin-bottom:8px;">Pengurangan Downtime</div>
+        <p style="font-size:14px;color:var(--text2);font-weight:300;">Deteksi dini masalah mesin mengurangi durasi downtime yang tidak terduga hingga setengahnya.</p>
+      </div>
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:36px 28px;text-align:center;">
+        <div style="font-family:'Space Grotesk',sans-serif;font-size:36px;font-weight:800;color:var(--purple);margin-bottom:8px;">+40%</div>
+        <div style="font-size:16px;font-weight:700;margin-bottom:8px;">Efisiensi Operator</div>
+        <p style="font-size:14px;color:var(--text2);font-weight:300;">Data real-time memungkinkan pengambilan keputusan lebih cepat dan tepat sasaran.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-inner">
+    <div class="cta-title">Siap Tingkatkan Efisiensi Produksi Anda?</div>
+    <p class="cta-desc">Mulai dengan konsultasi gratis dan demo sistem. Tidak ada komitmen jangka panjang, hanya solusi nyata.</p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+      <a href="contact.html" class="btn btn-primary">Hubungi Kami <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      <a href="index.html" class="btn btn-outline">Lihat Produk Lainnya</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">PT Ikhlas Amal Mulia Industri</div>
+      <p class="footer-brand-desc">Mitra terpercaya untuk solusi teknologi industri di Indonesia. Menghadirkan inovasi digital untuk manufaktur yang lebih efisien.</p>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Produk</div>
+      <a href="oee.html">OEE System</a>
+      <a href="weighing.html">Weighing System</a>
+      <a href="ems.html">EMS</a>
+      <a href="training.html">Training Management</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Perusahaan</div>
+      <a href="#">Tentang Kami</a>
+      <a href="#">Karir</a>
+      <a href="#">Blog</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Kontak</div>
+      <a href="contact.html">Hubungi Kami</a>
+      <a href="#">Iamirental2020@gmail.com</a>
+      <a href="#">+62 852-7224-9830</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">&copy; 2026 PT Ikhlas Amal Mulia Industri. All rights reserved.</div>
+    <div class="footer-socials">
+      <a href="#" class="footer-social"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+      <a href="#" class="footer-social"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+      <a href="#" class="footer-social"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon-180.png">
+<title>Weighing System — PT Ikhlas Amal Mulia Industri</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/weighing.css">
+<link rel="stylesheet" href="css/theme.css">
+<script src="theme.js"></script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon"><img src="img/logo.png" alt="ONE I'M Logo"></div>
+      <div class="nav-brand">ONE I'M<span>PT Ikhlas Amal Mulia Industri</span></div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="oee.html">OEE System</a>
+      <a href="weighing.html" class="active">Weighing System</a>
+      <a href="ems.html">EMS</a>
+      <a href="training.html">Training</a>
+      <a href="contact.html" class="nav-cta">Hubungi Kami</a>
+    </div>
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+    </button>
+    <div class="hamburger" onclick="toggleMobileMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="oee.html">OEE System</a>
+  <a href="weighing.html" class="active">Weighing System</a>
+  <a href="ems.html">EMS</a>
+  <a href="training.html">Training</a>
+  <a href="contact.html">Hubungi Kami</a>
+  <div class="mobile-theme-toggle" onclick="toggleTheme()">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    <span class="label-dark">Mode Siang</span>
+    <span class="label-light">Mode Malam</span>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg">
+    <div class="hero-glow1"></div>
+    <div class="hero-glow2"></div>
+    <div class="hero-grid"></div>
+  </div>
+  <div class="hero-inner">
+    <div class="hero-badge">Presisi Tinggi & Terintegrasi</div>
+    <h1>Weighing <em>System</em></h1>
+    <p class="hero-sub">Sistem penimbangan digital presisi tinggi terintegrasi produksi. Otomasi pencatatan berat, quality control, dan pelaporan hasil timbang secara real-time.</p>
+    <div class="hero-actions">
+      <a href="#features" class="btn btn-primary">
+        Lihat Fitur
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <a href="contact.html" class="btn btn-outline">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72"/><line x1="14" y1="2" x2="14" y2="8"/><line x1="11" y1="5" x2="17" y2="5"/></svg>
+        Konsultasi Gratis
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-strip">
+  <div class="stats-inner">
+    <div class="stat-item"><div class="stat-num">±0.1g</div><div class="stat-label">Akurasi Pengukuran</div></div>
+    <div class="stat-item"><div class="stat-num">99.9%</div><div class="stat-label">Uptime Sistem</div></div>
+    <div class="stat-item"><div class="stat-num">8000+</div><div class="stat-label">Data Timbang/Hari</div></div>
+    <div class="stat-item"><div class="stat-num">24/7</div><div class="stat-label">Support & Monitoring</div></div>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<section class="section" id="features" style="background:var(--bg2);">
+  <div class="section-inner">
+    <div class="section-tag">Kemampuan Utama</div>
+    <div class="section-title">Fitur-Fitur Unggulan</div>
+    <p class="section-desc">Enam fitur terpadu yang dirancang untuk mengoptimalkan proses penimbangan di lini produksi Anda.</p>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div class="feature-title">High Precision Weighing</div>
+        <div class="feature-desc">Akurasi pengukuran hingga ±0.1g dengan sensor berkaliber internasional dan stabilisasi otomatis.</div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 17"/><polyline points="17 6 23 6 23 12"/></svg>
+        </div>
+        <div class="feature-title">Auto Data Recording</div>
+        <div class="feature-desc">Pencatatan otomatis hasil timbang ke database tanpa intervensi manual, mengurangi human error.</div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div class="feature-title">Quality Control Integration</div>
+        <div class="feature-desc">Integrasi dengan standar QC untuk deteksi otomatis produk out-of-spec dan reject langsung.</div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </div>
+        <div class="feature-title">Multi-Scale Support</div>
+        <div class="feature-desc">Dukungan untuk multiple timbangan dalam satu sistem dengan sinkronisasi real-time.</div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M20 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h11"/></svg>
+        </div>
+        <div class="feature-title">Batch Tracking</div>
+        <div class="feature-desc">Pelacakan batch produk dari awal hingga akhir dengan traceability lengkap dan audit trail.</div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="12 3v12m8-8l-8 8-8-8"/></svg>
+        </div>
+        <div class="feature-title">ERP Integration</div>
+        <div class="feature-desc">Sinkronisasi seamless dengan sistem ERP untuk inventory, costing, dan reporting terpadu.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section">
+  <div class="section-inner">
+    <div class="section-tag">Cara Kerja</div>
+    <div class="section-title">Proses 4 Langkah Implementasi</div>
+    <p class="section-desc">Dari setup hingga go-live, sistem kami siap dalam hitungan minggu.</p>
+
+    <div class="workflow-grid">
+      <div class="workflow-step">
+        <div class="workflow-num">01</div>
+        <div class="workflow-title">Setup Scale</div>
+        <div class="workflow-desc">Instalasi dan konfigurasi timbangan digital dengan networking dan power backup.</div>
+        <div class="workflow-arrow">→</div>
+      </div>
+
+      <div class="workflow-step">
+        <div class="workflow-num">02</div>
+        <div class="workflow-title">Calibrate</div>
+        <div class="workflow-desc">Kalibrasi presisi dan setting parameter QC sesuai spesifikasi produk Anda.</div>
+        <div class="workflow-arrow">→</div>
+      </div>
+
+      <div class="workflow-step">
+        <div class="workflow-num">03</div>
+        <div class="workflow-title">Auto-Record</div>
+        <div class="workflow-desc">Aktifkan otomasi pencatatan data dan sinkronisasi real-time ke sistem sentral.</div>
+        <div class="workflow-arrow">→</div>
+      </div>
+
+      <div class="workflow-step">
+        <div class="workflow-num">04</div>
+        <div class="workflow-title">Generate Reports</div>
+        <div class="workflow-desc">Dashboard dan laporan otomatis untuk monitoring, analisis, dan decision making.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ILLUSTRATION -->
+<section class="illustration-section">
+  <div class="illustration-inner">
+    <div class="illustration-content">
+      <h2>Sistem Penimbangan Terpadu</h2>
+      <p>Weighing System ONE I'M dirancang untuk manufaktur modern yang menuntut akurasi, kecepatan, dan integrasi penuh dengan proses produksi.</p>
+      <p>Dengan teknologi sensor terkini dan algoritma stabilisasi canggih, kami menjamin hasil ukur yang konsisten bahkan dalam lingkungan produksi yang dinamis.</p>
+      <ul>
+        <li>Sensor presisi tinggi dengan resolusi mikrogram</li>
+        <li>Interface touchscreen intuitif dan responsive</li>
+        <li>Connectivity: Ethernet, WiFi, dan Serial optional</li>
+        <li>Data logging unlimited dengan SSD internal</li>
+        <li>Compliance: ISO 9001, ISO 12181, dan standar industri lainnya</li>
+        <li>Training lengkap dan dokumentasi teknis</li>
+      </ul>
+    </div>
+    <div class="illustration-svg">
+      <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;max-width:400px;">
+        <!-- Base/Platform -->
+        <rect x="100" y="300" width="200" height="20" fill="#0088ff" opacity="0.3" rx="2"/>
+        <rect x="95" y="320" width="210" height="10" fill="#0088ff" opacity="0.15" rx="2"/>
+
+        <!-- Support columns -->
+        <rect x="120" y="240" width="15" height="70" fill="none" stroke="#0088ff" stroke-width="2"/>
+        <rect x="265" y="240" width="15" height="70" fill="none" stroke="#0088ff" stroke-width="2"/>
+
+        <!-- Weighing platform top -->
+        <rect x="110" y="220" width="180" height="30" fill="none" stroke="#0088ff" stroke-width="3" rx="3"/>
+        <line x1="120" y1="220" x2="120" y2="250" stroke="#0088ff" stroke-width="2" opacity="0.5"/>
+        <line x1="200" y1="220" x2="200" y2="250" stroke="#0088ff" stroke-width="2" opacity="0.5"/>
+        <line x1="280" y1="220" x2="280" y2="250" stroke="#0088ff" stroke-width="2" opacity="0.5"/>
+
+        <!-- Digital display/readout -->
+        <rect x="130" y="150" width="140" height="50" fill="none" stroke="#0088ff" stroke-width="2.5" rx="4"/>
+        <rect x="135" y="160" width="130" height="35" fill="rgba(0,136,255,0.1)" rx="2"/>
+
+        <!-- Display text segments -->
+        <text x="200" y="195" font-family="Space Grotesk, monospace" font-size="24" font-weight="bold" fill="#0088ff" text-anchor="middle">2.5kg</text>
+
+        <!-- Control panel -->
+        <rect x="130" y="70" width="140" height="60" fill="none" stroke="#0088ff" stroke-width="2" rx="4"/>
+
+        <!-- Buttons -->
+        <circle cx="155" cy="90" r="6" fill="none" stroke="#0088ff" stroke-width="2"/>
+        <circle cx="200" cy="90" r="6" fill="none" stroke="#0088ff" stroke-width="2"/>
+        <circle cx="245" cy="90" r="6" fill="none" stroke="#0088ff" stroke-width="2"/>
+
+        <!-- Text labels -->
+        <text x="155" y="115" font-family="Inter, sans-serif" font-size="11" fill="#00c8b8" text-anchor="middle">TARE</text>
+        <text x="200" y="115" font-family="Inter, sans-serif" font-size="11" fill="#00c8b8" text-anchor="middle">PRINT</text>
+        <text x="245" y="115" font-family="Inter, sans-serif" font-size="11" fill="#00c8b8" text-anchor="middle">ZERO</text>
+
+        <!-- Connection indicators -->
+        <circle cx="295" cy="185" r="4" fill="#0088ff" opacity="0.5"/>
+        <line x1="303" y1="185" x2="320" y2="185" stroke="#0088ff" stroke-width="1.5" opacity="0.5"/>
+        <text x="325" y="190" font-family="Inter, sans-serif" font-size="10" fill="rgba(255,255,255,0.5)">Data</text>
+
+        <!-- Power indicator -->
+        <circle cx="295" cy="210" r="4" fill="#0088ff"/>
+        <line x1="303" y1="210" x2="320" y2="210" stroke="#0088ff" stroke-width="1.5"/>
+        <text x="325" y="215" font-family="Inter, sans-serif" font-size="10" fill="#0088ff">Online</text>
+
+        <!-- Decorative elements -->
+        <circle cx="50" cy="100" r="60" fill="none" stroke="#0088ff" stroke-width="1" opacity="0.1"/>
+        <circle cx="350" cy="280" r="50" fill="none" stroke="#0088ff" stroke-width="1" opacity="0.1"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="section" style="background:var(--bg2);">
+  <div class="section-inner">
+    <div class="section-tag">Manfaat</div>
+    <div class="section-title">Dampak Bisnis yang Terukur</div>
+    <p class="section-desc">Tingkatkan efisiensi, akurasi, dan kontrol kualitas di lantai produksi Anda.</p>
+
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="benefit-num">98%</div>
+        <div class="benefit-title">Pengurangan Waste</div>
+        <div class="benefit-desc">Deteksi out-of-spec otomatis mengurangi produk rusak dan pemborosan material.</div>
+      </div>
+
+      <div class="benefit-card">
+        <div class="benefit-num">45%</div>
+        <div class="benefit-title">Lebih Cepat</div>
+        <div class="benefit-desc">Otomasi QC menghemat waktu inspeksi manual hingga 45%, mempercepat throughput.</div>
+      </div>
+
+      <div class="benefit-card">
+        <div class="benefit-num">24/7</div>
+        <div class="benefit-title">Visibility Lengkap</div>
+        <div class="benefit-desc">Monitoring real-time dan historical data untuk insights operasional yang mendalam.</div>
+      </div>
+
+      <div class="benefit-card">
+        <div class="benefit-num">100%</div>
+        <div class="benefit-title">Traceability</div>
+        <div class="benefit-desc">Audit trail lengkap untuk compliance dan quality assurance yang ketat.</div>
+      </div>
+
+      <div class="benefit-card">
+        <div class="benefit-num">30%</div>
+        <div class="benefit-title">Cost Savings</div>
+        <div class="benefit-desc">Efisiensi operasional dan pengurangan rework menghasilkan ROI dalam 12 bulan.</div>
+      </div>
+
+      <div class="benefit-card">
+        <div class="benefit-num">99.9%</div>
+        <div class="benefit-title">Uptime</div>
+        <div class="benefit-desc">Sistem redundant dan support 24/7 menjamin operasi tanpa gangguan.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-inner">
+    <div class="cta-title">Optimalkan Proses Penimbangan Anda Sekarang</div>
+    <p class="cta-desc">Konsultasikan kebutuhan spesifik Anda dengan tim expert kami. Dapatkan ROI proposal dalam hitungan hari.</p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+      <a href="contact.html" class="btn btn-primary">Hubungi Kami <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      <a href="index.html" class="btn btn-outline">Kembali ke Home</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">PT Ikhlas Amal Mulia Industri</div>
+      <p class="footer-brand-desc">Mitra terpercaya untuk solusi teknologi industri di Indonesia. Menghadirkan inovasi digital untuk manufaktur yang lebih efisien, akurat, dan berkelanjutan.</p>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Produk</div>
+      <a href="oee.html">OEE System</a>
+      <a href="weighing.html">Weighing System</a>
+      <a href="ems.html">EMS</a>
+      <a href="training.html">Training Management</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Perusahaan</div>
+      <a href="#">Tentang Kami</a>
+      <a href="#">Karir</a>
+      <a href="#">Blog</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Kontak</div>
+      <a href="contact.html">Hubungi Kami</a>
+      <a href="#">Iamirental2020@gmail.com</a>
+      <a href="#">+62 852-7224-9830</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">&copy; 2026 PT Ikhlas Amal Mulia Industri. All rights reserved.</div>
+    <div class="footer-socials">
+      <a href="#" class="footer-social"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+      <a href="#" class="footer-social"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+      <a href="#" class="footer-social"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
